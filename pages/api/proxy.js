@@ -35,6 +35,7 @@ export default async function handler(req, res) {
     // Manipulate HTML based on the target page
     if (page === "page1") {
       $("h1").text("New Title for Page 1");
+      $("input[type='submit']").css("background-color", "lightblue"); // Example color change
     } else if (page === "page2") {
       $("h1").text("New Title for Page 2");
     }
